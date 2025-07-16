@@ -1,13 +1,12 @@
 {
-  "name": "j22stream",
+  "name": "j22stream-frontend",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Frontend untuk J22Stream - UI mirip Netflix menggunakan Bootstrap 5 + FontAwesome",
+  "author": "J22Team",
+  "license": "MIT",
+  "private": true,
   "scripts": {
-    "dev": "vercel dev",
-    "start": "node api/videos.js"
+    "start": "echo 'Static frontend. No build step needed.'"
   },
-  "dependencies": {
-    "axios": "^1.6.0",
-    "form-data": "^4.0.0"
-  }
+  "dependencies": {}
 }
