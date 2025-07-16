@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const TOKEN = 'ISI_TOKEN_BOT_ANDA'; // Ganti token bot Anda
+const TOKEN = '7852601048:AAH7ktrLjL4oQQ21zzcVt9F7TuFrbB1VZq0'; // Ganti token bot Anda
 
 module.exports = async (req, res) => {
   const { file_id } = req.query;
