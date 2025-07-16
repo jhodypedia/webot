@@ -4,40 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>J22Stream</title>
-
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- FontAwesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Toastr -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"/>
-
-  <link rel="stylesheet" href="/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body style="font-family: 'Poppins', sans-serif;">
-  <nav class="navbar navbar-dark bg-dark mb-4">
-    <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="#">
-        <i class="fa-solid fa-film me-2"></i>J22Stream
-      </a>
+<body class="bg-dark text-white">
+  <div class="container py-4">
+    <h1 class="mb-4"><i class="fa-solid fa-clapperboard"></i> J22Stream</h1>
+    <div id="videos" class="row g-4"></div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="playModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content bg-black">
+        <div class="modal-body p-0">
+          <video id="videoPlayer" class="w-100" controls autoplay></video>
+        </div>
+      </div>
     </div>
-  </nav>
+  </div>
 
-  <main class="container">
-    <div id="video-list" class="row gy-4"></div>
-  </main>
-
-  <!-- Bootstrap JS + Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Toastr -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
-  <script src="/player.js"></script>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
