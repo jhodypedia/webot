@@ -4,7 +4,7 @@ const axios = require('axios');
 const FormData = require('form-data');
 
 const BOT_TOKEN = '7852601048:AAH7ktrLjL4oQQ21zzcVt9F7TuFrbB1VZq0';
-const CHAT_ID = '-100XXXXXXXXXX';
+const CHAT_ID = '@j22stream';
 const VIDEO_LIST_PATH = path.join(__dirname, 'videos.json');
 const videoFilePath = './sample-video.mp4';
 
